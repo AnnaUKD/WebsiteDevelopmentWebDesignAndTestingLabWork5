@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Work #5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Мій SPA</h1>
+    <p class="timer">On page: <span id="timer">00:00</span></p>
+    <nav>
+      <a href="#catalog">Catalogue</a>
+      <a href="#details">About Us</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
+  <main>
+    <section id="catalog">
+      <h2>Каталог</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>HTML</h3>
+          <p>Page layout: titles, lists, links, forms.</p>
+        </div>
+        <div class="card">
+          <h3>CSS</h3>
+          <p>Style: colours, paddings, flexbox.</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>Logic: events, work with DOM, timers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="is-hidden">
+      <h2>About Us</h2>
+      <p>It is a demonstration of single-page application (SPA) with clear JavaScript.</p>
+      <p>All three sections are in one HTML-file. Switching happens without page reloading, that is the reason why timer doesn't resets.</p>
+    </section>
+
+    <section id="feedback" class="is-hidden">
+      <h2>Feedback</h2>
+      <form id="feedback-form">
+        <label for="user-name">Name</label>
+        <input type="text" id="user-name" required>
+
+        <label for="user-email">Email</label>
+        <input type="email" id="user-email" required>
+
+        <label for="user-text">Message</label>
+        <textarea id="user-text" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="form-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lab Work №5</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
